@@ -32,7 +32,7 @@ public class nqueens {
         if (row == board.length) {
             printBoard(board);
             count++;
-            return;
+            return ;
         }
 
         // try placing queen in each column
