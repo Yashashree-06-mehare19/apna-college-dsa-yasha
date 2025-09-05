@@ -12,9 +12,9 @@ public static void main(String args[]){
      
 
     List1.add(1);   //0(1)
+    List1.add(45);
     List1.add(3);
-    List1.add(4);
-    List1.add(6);
+    List1.add(5);
 System.out.println(List1);
 
 
@@ -58,6 +58,25 @@ for(int i=List1.size()-1;i>=0;i--){
     System.out.print(List1.get(i)+" ");
 }
 System.out.println();
+
+
+//print max
+
+int max=Integer.MIN_VALUE;
+for(int i =0;i<List1.size();i++){
+// if(max<List1.get(i)){
+//    max=List1.get(i);
+ max=Math.max(max,List1.get(i));
+// }
+}
+
+System.out.println("max element is = "+max);
+
     }
+
+
+
+
+   
     
 }
