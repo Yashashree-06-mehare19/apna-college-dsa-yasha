@@ -56,6 +56,24 @@ public void print(){
     System.out.println("null");
 }
 
+
+public static void add(int idx, int data){
+    Node newNode=new Node(data);
+
+    Node temp=head;
+
+    int i=0;
+    while(i<idx-1){
+        temp=temp.next;
+        i++;
+    }
+    //i=idx-1; tem-> prev
+
+    newNode.next=temp.next;
+    temp.next=newNode;
+     
+}
+
 public static void main(String[] args) {
       
    LinkedList ll=new LinkedList();
@@ -68,7 +86,9 @@ public static void main(String[] args) {
    ll.print();
    ll.addLast(4);
    ll.print();
-
+   
+   ll.add(2, 90);
+   ll.print();
 
 
   
